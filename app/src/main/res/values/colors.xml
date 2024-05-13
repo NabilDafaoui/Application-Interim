@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="light_grey">#e8e8e8</color>
+    <color name="grey">#52B8B8B8</color>
+    <color name="redlight">#ef4136</color>
+
+  <color name="lightblue">#6F9FAA</color>
+
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="light_gray">#F5F5F5</color>
+    <color name="light_blue">#2196F3</color>
+    <color name="primary_text">#DE000000</color> <!-- Very dark gray (almost black) for primary text -->
+    <color name="secondary_text">#89000000</color> <!-- Dark gray for secondary text -->
+    <color name="background_color">#FFFFFF</color> <!-- White background -->
+    <color name="red">#DC1313</color> <!-- White background -->
+
+</resources>

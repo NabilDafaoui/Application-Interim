@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Permissions pour accéder à la localisation -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ADMDInterim"
+        tools:targetApi="31">
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+        <!-- Espace EMPLOYEUR -->
+        <activity
+            android:name=".employeur.InscriptionEmployeurActivity"
+            android:exported="false" />
+        <activity android:name=".employeur.MenuEmployeurActivity"
+            android:exported="false" />
+        <activity android:name=".employeur.ConnexionEmployeurActivity"
+            android:exported="false" />
+        <activity android:name=".employeur.EspaceEmployeurActivity"
+            android:exported="false" />
+        <activity
+            android:name=".logic.DetailsCandidatActivity"
+            android:exported="false" />
+
+
+        <activity android:name=".employeur.CreationOffreActivity">
+            <!--  Add any intent filters or other activity configuration here if needed  -->
+        </activity>
+        <activity android:name=".employeur.GestionOffreActivity">
+            <!--  Add any intent filters or other activity configuration here if needed  -->
+        </activity>
+        <activity android:name=".employeur.GestionCandidatureActivity">
+            <!--  Add any intent filters or other activity configuration here if needed  -->
+        </activity>
+        <activity android:name=".employeur.CandidaturesAccepteesActivity">
+            <!--  Add any intent filters or other activity configuration here if needed  -->
+        </activity>
+
+        <activity android:name=".employeur.ConsulterOffreActivity">
+            <!-- If there are any intent filters, they should be declared here -->
+        </activity>
+        <activity android:name=".employeur.ModifierOffreActivity">
+            <!-- If there are any intent filters, they should be declared here -->
+        </activity>
+
+        <!-- Espace CANDIDAT -->
+        <activity
+            android:name=".candidat.EspaceCandidatActivity"
+            android:exported="false"
+            android:theme="@style/Theme.ADMDInterim" />
+        <activity android:name=".candidat.MenuCandidatActivity"
+            android:exported="false" />
+        <activity
+            android:name=".candidat.InscriptionCandidatActivity"
+            android:exported="false" />
+        <activity android:name=".candidat.ConnexionCandidatActivity"
+            android:exported="false" />
+        <activity android:name=".candidat.CandidaturePage"
+            android:exported="false" />
+        <activity
+            android:name=".candidat.MesCandidaturesActivity"
+            android:exported="false" />
+
+
+        <!-- Espace ANONYME -->
+
+        <activity
+            android:name=".anonyme.AnonymeActivity"
+            android:exported="false" />
+
+    </application>
+
+</manifest>

@@ -1,0 +1,73 @@
+<!-- activity_creation_offre.xml -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/editTextTitre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Titre de l'offre"
+        android:inputType="text"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp" />
+
+    <EditText
+        android:id="@+id/editTextDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Description détaillée du poste"
+        android:inputType="textMultiLine"
+        android:minLines="3"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp" />
+
+    <EditText
+        android:id="@+id/editTextMetier"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Métier ciblé"
+        android:inputType="text"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp" />
+
+    <EditText
+        android:id="@+id/editTextLieu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Lieu de travail"
+        android:inputType="text"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp" />
+
+    <EditText
+        android:id="@+id/editTextDateDebut"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Date de début (AAAA-MM-JJ)"
+        android:inputType="text"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp" />
+
+    <EditText
+        android:id="@+id/editTextDateFin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Date de fin (AAAA-MM-JJ)"
+        android:inputType="text"
+        android:padding="12dp"
+        android:layout_marginBottom="24dp" />
+
+    <Button
+        android:id="@+id/buttonEnregistrerOffre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enregistrer l'offre"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@color/lightblue"
+        android:padding="16dp" />
+
+</LinearLayout>

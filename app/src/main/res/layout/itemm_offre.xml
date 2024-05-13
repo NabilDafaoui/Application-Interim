@@ -1,0 +1,49 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginTop="16dp"
+    android:layout_marginStart="16dp"
+    android:layout_marginEnd="16dp">
+
+    <TextView
+        android:id="@+id/textOfferTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Titre de l'offre"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp">
+
+        <Button
+            android:id="@+id/buttonConsulter"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Consulter"
+            android:layout_marginEnd="8dp"/>
+
+        <Button
+            android:id="@+id/buttonModifier"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Modifier"
+            android:layout_marginEnd="8dp"/>
+
+        <Button
+            android:id="@+id/buttonSupprimer"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Supprimer"/>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/grey">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/rounded_button"
+        android:backgroundTint="@color/lightblue"
+        android:padding="16dp"
+        android:layout_marginBottom="24dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Inscription Employeur"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_gravity="center" />
+
+    </FrameLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="30dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="20dp">
+
+            <EditText
+                android:id="@+id/editTextNom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nom"
+                android:inputType="textPersonName"
+                android:padding="12dp"
+                android:background="@drawable/rounded_edittext_background"
+                android:layout_marginBottom="10dp" />
+
+            <EditText
+                android:id="@+id/editTextEntreprise"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Entreprise"
+                android:inputType="text"
+                android:padding="12dp"
+                android:background="@drawable/rounded_edittext_background"
+                android:layout_marginBottom="10dp" />
+
+
+
+            <EditText
+                android:id="@+id/editTextTelephone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Numéro de téléphone (+33123456789)"
+                android:inputType="phone"
+                android:padding="12dp"
+                android:background="@drawable/rounded_edittext_background"
+                android:layout_marginBottom="4dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Entrez un numéro avec l'indicatif pays suivi de 10 chiffres."
+                android:textSize="12sp"
+                android:textColor="@android:color/darker_gray"
+                android:padding="4dp"
+                android:layout_marginBottom="10dp" />
+
+
+            <EditText
+                android:id="@+id/editTextAdresse"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Adresse"
+                android:inputType="text"
+                android:padding="12dp"
+                android:background="@drawable/rounded_edittext_background"
+                android:layout_marginBottom="10dp" />
+
+            <EditText
+                android:id="@+id/editTextLienPublic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Lien public (http://www.exemple.com)"
+                android:inputType="text"
+                android:padding="12dp"
+                android:background="@drawable/rounded_edittext_background"
+                android:layout_marginBottom="4dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Entrez un lien complet commençant par http:// ou https://."
+                android:textSize="12sp"
+                android:textColor="@android:color/darker_gray"
+                android:padding="4dp"
+                android:layout_marginBottom="10dp" />
+
+            <EditText
+                android:id="@+id/editTextEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email (exemple : utilisateur@domaine.com)"
+                android:inputType="textEmailAddress"
+                android:padding="12dp"
+                android:background="@drawable/rounded_edittext_background"
+                android:layout_marginBottom="4dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Entrez une adresse email valide."
+                android:textSize="12sp"
+                android:textColor="@android:color/darker_gray"
+                android:padding="4dp"
+                android:layout_marginBottom="10dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp"
+                android:background="@drawable/rounded_edittext_background"
+                android:layout_marginBottom="10dp">
+
+                <EditText
+                    android:id="@+id/editTextPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:padding="12dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_toStartOf="@+id/textViewToggle" />
+
+                <TextView
+                    android:id="@+id/textViewToggle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:padding="12dp"
+                    android:drawableEnd="@drawable/ic_visibility_off"
+                    android:gravity="center_vertical" />
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/editTextConfirmPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Confirm Password"
+                android:inputType="textPassword"
+                android:padding="12dp"
+                android:background="@drawable/rounded_edittext_background"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:id="@+id/passwordMatchIndicator"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Password does not match"
+                android:textColor="@color/red"
+                android:visibility="gone"
+                android:padding="12dp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/buttonEnregistrer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="S'enregistrer"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@color/lightblue"
+        android:padding="16dp" />
+
+</LinearLayout>

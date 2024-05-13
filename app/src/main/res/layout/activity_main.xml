@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/grey"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="484dp"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <ImageView
+            android:layout_width="322dp"
+            android:layout_height="271dp"
+            android:layout_gravity="center"
+            android:src="@drawable/travailleur" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView_admd_interim"
+                android:layout_width="wrap_content"
+                android:layout_height="74dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="16dp"
+                android:text="ADMD INTERIM"
+                android:textAlignment="center"
+                android:textColor="@color/lightblue"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView_votre_prochain_emploi"
+                android:layout_width="wrap_content"
+                android:layout_height="63dp"
+                android:text="Votre prochain emploi commence ici !"
+                android:textColor="@color/lightblue"
+                android:textSize="20dp"
+                android:layout_gravity="bottom"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_button"
+        android:backgroundTint="@color/lightblue"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="bottom|center"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <Button
+                android:id="@+id/button_espace_candidat"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:backgroundTint="@color/grey"
+                android:onClick="onEspaceCandidatClick"
+                android:text="Espace Candidat"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/button_espace_employeur"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/grey"
+                android:onClick="onEspaceEmployeurClick"
+                android:text="Espace Employeur"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/textView_continuer_anonymement"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="170dp"
+                android:clickable="true"
+                android:onClick="onContinuerAnonymementClick"
+                android:text="Continuer anonymement"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </FrameLayout>
+
+</LinearLayout>

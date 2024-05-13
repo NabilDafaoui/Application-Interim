@@ -1,0 +1,29 @@
+<!-- activity_modifier_offre.xml -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/editTextTitre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Titre de l'offre"
+        android:inputType="text"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Ajoutez d'autres EditText ou d'autres vues pour permettre la modification des détails -->
+
+    <Button
+        android:id="@+id/buttonEnregistrer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enregistrer les modifications"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@color/lightblue"
+        android:padding="16dp" />
+
+</LinearLayout>
